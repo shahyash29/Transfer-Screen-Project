@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
+.container {
+  width: 360px;
+  margin: 10px auto 0;
+  border: 1px solid #dddddd;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0085ff), to(#0068ff));
+  background: linear-gradient(0deg, #0085ff, #0068ff);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.first-container-section {
+  padding: 19px 89px 23px 90px;
+}
+
+.first-container-section .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-container-section .flex-container .text-content {
+  font-family: "Mulish";
+  font-weight: 800;
+  margin-left: 6px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.first-container-section .flex-container .text-content .hightlight-content {
+  font-family: "Mulish";
+  font-weight: normal;
+  color: #c9dcde;
+}
+
+.second-container-section {
+  width: 100%;
+  padding: 0 3px 0 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.second-container-section .loading-container {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #0072da;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.second-container-section .inner-container-section {
+  background: #fff;
+}
+
+.second-container-section .inner-container-section .middle-container {
+  font-size: 22px;
+  color: #22273b;
+  padding: 9px 15px 28px 15px;
+  text-align: center;
+  font-family: "Mulish";
+  font-weight: bold;
+}
+
+.second-container-section .inner-container-section .flex-survey-container {
+  padding: 0px 50px;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .image-transfer-container {
+  margin-right: 18px;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .transfer-text-content {
+  font-size: 16px;
+  font-family: "Mulish";
+  font-weight: bold;
+  color: #98a1c4;
+  text-align: left;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .transfer-text-content.non-active {
+  color: #22273b;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .active-transfer-container {
+  position: absolute;
+  left: 219px;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .active-transfer-container::after {
+  position: absolute;
+  width: 3px;
+  height: 64px;
+  background: #1bc947;
+  content: "";
+  top: 28px;
+  left: 17px;
+}
+
+.second-container-section .inner-container-section .flex-survey-container .flex-transfer-screen-container .active-transfer-container.last::after {
+  height: 47px;
+}
+
+.second-container-section .inner-container-section .last-section-inner-container {
+  padding: 0px 24px 26px 31px;
+}
+/*# sourceMappingURL=style.css.map */

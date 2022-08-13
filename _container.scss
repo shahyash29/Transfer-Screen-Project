@@ -1,0 +1,6 @@
+.container{
+    width: 360px;
+    margin: 10px auto 0;
+    border:1px solid #dddddd;
+    @include set-background($gradient-color1,$gradient-color2);
+}

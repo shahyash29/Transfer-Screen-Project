@@ -1,0 +1,22 @@
+$gradient-color1:#0085ff;
+$gradient-color2:#0068ff;
+$font-family-value:'Mulish';
+$font-mulish-regular:normal;
+$font-mulish-extra-bold:800;
+$font-mulish-bold:bold;
+$highlight-color:#22273b;
+$font-size1:15px;
+$font-size2:16px;
+$font-size3:22px;
+
+// Set background Color of Container
+@mixin set-background($color1,$color2) {
+    background: linear-gradient(0deg,$color1,$color2);
+}
+
+// Font arrangement
+@mixin set-family-font($font-family-name,$font-family-weight){
+    font-family: $font-family-name;
+    font-weight: $font-family-weight;
+}
+
