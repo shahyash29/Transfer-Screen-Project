@@ -1,0 +1,94 @@
+@import 'config';
+@import 'container';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.first-container-section{
+    padding: 19px 89px 23px 90px;
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-content{
+            @include set-family-font($font-family-value,$font-mulish-extra-bold);
+            margin-left: 6px;
+            color: #fff;
+            font-size: $font-size1;
+            .hightlight-content{
+                @include set-family-font($font-family-value,$font-mulish-regular);
+                color:#c9dcde;
+            }
+        }
+    }
+}
+.second-container-section{
+    width: 100%;
+    padding: 0 3px 0 3px;
+    box-sizing: border-box;
+    .loading-container{
+        border-top-right-radius:10px;
+        border-top-left-radius: 10px;
+        background: #0072da;
+        padding:5px 0;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        @include set-family-font($font-family-value,$font-mulish-bold);
+        font-size: $font-size2;
+    }
+    .inner-container-section{
+        background: #fff;
+        .middle-container{
+            font-size: $font-size3;
+            color:$highlight-color;
+            padding:9px 15px 28px 15px;
+            text-align: center;
+            @include set-family-font($font-family-value,$font-mulish-bold);
+        }
+        .flex-survey-container{
+            padding: 0px 50px;
+            .flex-transfer-screen-container{
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                position: relative;
+                .image-transfer-container{
+                    margin-right: 18px;
+                }
+                .transfer-text-content{
+                    font-size: $font-size2;
+                    @include set-family-font($font-family-value,$font-mulish-bold);
+                    color:lighten($highlight-color,50%);
+                    text-align: left;
+                    &.non-active{
+                        color:$highlight-color;
+                    }
+                }
+                .active-transfer-container{
+                    position: absolute;
+                    left:219px;
+                    &::after{
+                        position: absolute;
+                        width: 3px;
+                        height: 64px;
+                        background: #1bc947;
+                        content: "";
+                        top:28px;
+                        left:17px;
+                    }
+                    &.last::after{
+                        height: 47px;
+                    }
+                   
+                }
+            }
+        }
+        .last-section-inner-container{
+            padding: 0px 24px 26px 31px;
+        }
+
+    }
+}
